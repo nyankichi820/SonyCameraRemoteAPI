@@ -6,6 +6,12 @@ iOS Sony Camera Remote API Client Library For QX10/100 and more..
 - find device SSDP
 - Live Preview support
 
+
+## Install
+
+   pod 'SonyCameraRemoteAPI'
+   
+
 ## Usage
 
 ### Discover and connect device and capture live view
