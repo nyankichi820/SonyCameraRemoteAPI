@@ -17,8 +17,16 @@ Pod::Spec.new do |s|
 
   s.platform     = 'ios', '6.0'
 
+  s.dependency 'CocoaAsyncSocket'
+
+  s.dependency 'AFNetworking'    
+
+  s.dependency 'KissXML'         
+
+  s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+
   s.source       = { :git => "https://github.com/nyankichi820/SonyCameraRemoteAPI.git", :tag => "#{s.version}" }
 
-  s.source_files  = 'SonyCameraRemoteAPI/Classes'
+  s.source_files  = 'Classes'
 
 end
